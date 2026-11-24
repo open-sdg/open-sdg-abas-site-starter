@@ -1,0 +1,4 @@
+# Open SDG - Site starter
+
+This is a starter repository to help in implementing the [Open SDG](https://github.com/open-sdg/open-sdg) platform for the ABAS M&E Framework. [See here for documentation](https://open-sdg.readthedocs.io).
+
