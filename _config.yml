@@ -38,4 +38,4 @@ exclude:
   - README.md
   - LICENSE
 
-other_framework_domain: "https://Test-ABAS.github.io/sdg-site"
+other_framework_domain: "http://open-sdg.org/open-sdg-site-starter"
