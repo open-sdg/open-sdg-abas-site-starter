@@ -1,0 +1,43 @@
+// Enter any custom Sass in this file.
+
+//making goal icon corners curved and bigger to fill the page
+#main-content .goal-tiles .goal-tile img {
+  border-radius: 20px;
+}
+ 
+@media only screen and (min-width: 992px) {
+  .frontpage-goals-grid .goal-tiles .goal-tile {
+	  width: 14%;
+  }
+}
+
+// Adjusting size of goal banners
+.goal-banner {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+//giving the ABAS goal icons their colours:
+
+.goal-tiles #goal-ABAS1, .goal-tiles .goal-icon-ABAS1 {
+  background-color: #0963C7;
+}
+.goal-tiles #goal-ABAS2, .goal-tiles .goal-icon-ABAS1 {
+  background-color: #F06B4F;
+}
+.goal-tiles #goal-ABAS3, .goal-tiles .goal-icon-ABAS1 {
+  background-color: #27833A;
+}
+.goal-tiles #goal-ABAS4, .goal-tiles .goal-icon-ABAS1 {
+  background-color: #95EFE4;
+}
+.goal-tiles #goal-ABAS5, .goal-tiles .goal-icon-ABAS1 {
+  background-color: #3EA3DA;
+}
+.goal-tiles #goal-ABAS6, .goal-tiles .goal-icon-ABAS1 {
+  background-color: #19486A;
+}
+.goal-tiles #goal-ABAS7, .goal-tiles .goal-icon-ABAS1 {
+  background-color: #E0DF9F;
+}
