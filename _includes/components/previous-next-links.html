@@ -1,0 +1,31 @@
+{% assign other_framework_label = 'ABAS Framework' %}
+{% assign first_char = page.indicator.indicator_number | slice: 0, 1 | downcase %}
+{% if first_char >= 'a' and first_char <= 'z' %}
+  {% assign other_framework_label = 'SDG Framework' %}
+{% endif %}
+{% assign other_framework_path = page.indicator.other_framework_path %}
+
+{% if page.previous and page.next %}
+<div class="previous-next-links d-flex justify-content-between">
+    <div class="text-left">
+        <a class="btn btn-primary" href="{{ page.previous.url }}" aria-labelledby="previous-link">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <span id="previous-link" class="d-none d-md-inline">{{ include.previous_label | t }}</span>
+        </a>
+    </div>
+    {% if other_framework_path %}
+    <div class="text-other-framework">
+        <a class="btn btn-primary" href="{{ site.other_framework_domain}}/{{ other_framework_path }}" aria-labelledby="other-framework-link">
+            <i class="fa fa-sitemap" aria-hidden="true"></i>
+            <span id="other-framework-link" class="d-none d-md-inline">{{ other_framework_label }}</span>
+        </a>
+    </div>
+    {% endif %}
+    <div class="text-right">
+        <a class="btn btn-primary" href="{{ page.next.url }}" aria-labelledby="next-link">
+            <span id="next-link" class="d-none d-md-inline">{{ include.next_label | t }}</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+{% endif %}
